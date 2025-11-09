@@ -629,7 +629,7 @@ See the [LICENSE](LICENSE) file for full details.
 
 - GitHub: [@Vikas-Maurya-hack](https://github.com/Vikas-Maurya-hack)
 - Repository: [ANY-files-to-JSON](https://github.com/Vikas-Maurya-hack/ANY-files-to-JSON)
-- Email: [Contact via GitHub](https://github.com/Vikas-Maurya-hack)
+- Email: vikasmaurya916728@gmailcom
 
 ---
 
@@ -747,55 +747,7 @@ Special thanks to the open-source community!
 If you discover a security vulnerability, please email:
 - Create a private security advisory on GitHub
 - Or contact via [GitHub Issues](https://github.com/Vikas-Maurya-hack/ANY-files-to-JSON/issues) with [SECURITY] tag
-
----
-
-## ❓ FAQ
-
-**Q: Is this tool free?**  
-A: Yes, completely free and open-source (MIT License).
-
-**Q: Does it work on Mac/Linux?**  
-A: Currently Windows only. Mac/Linux support is planned for v1.1.
-
-**Q: Can I use this for commercial projects?**  
-A: Yes! MIT License allows commercial use.
-
-**Q: Does it require internet?**  
-A: No, works completely offline.
-
-**Q: How accurate is the extraction?**  
-A: 100% for text-based files. OCR accuracy depends on image quality.
-
-**Q: Can it handle password-protected files?**  
-A: Not currently. Encrypted PDFs and archives will be skipped.
-
-**Q: Maximum file size?**  
-A: Tested up to 500MB per file. Larger files may work but consume more memory.
-
-**Q: Can I extract from network drives?**  
-A: Yes, but local drives are faster.
-
----
-
-## 📞 Support
-
-### Get Help
-
-- **GitHub Issues**: [Report bugs or request features](https://github.com/Vikas-Maurya-hack/ANY-files-to-JSON/issues)
-- **Discussions**: [Ask questions and share ideas](https://github.com/Vikas-Maurya-hack/ANY-files-to-JSON/discussions)
-- **Documentation**: Check the [docs](docs/) folder
-- **Email**: Contact via GitHub profile
-
-### Before Reporting Issues
-
-Please include:
-1. Operating system and version
-2. Python version (if running from source)
-3. Error message or screenshot
-4. Steps to reproduce
-5. Sample files (if possible)
-
+  
 ---
 
 <div align="center">
