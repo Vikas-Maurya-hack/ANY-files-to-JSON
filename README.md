@@ -63,6 +63,42 @@ Extract content from **80+ file formats** including:
 4. **Click "▶ Start Extraction"** 
 5. **Find your JSON** in `D:\extracted_data\`
 
+---
+
+### Download & verify the standalone executable (Windows)
+
+If you prefer the pre-built Windows binary, you can download the executable from the Releases page or use the copy included in this repository under `dist/DocumentExtractor.exe` (if present).
+
+Important release details for v1.0.0:
+
+- File: `dist/DocumentExtractor.exe`
+- Size: 88,962,353 bytes (~84.82 MB)
+- SHA256: `008D96819575DEE3E1B93E5A0E751D64E4EBC6C09C24E9D6B12E89F76A04C5B7`
+
+Verify the file after download (PowerShell):
+
+```powershell
+# Compute SHA256 and compare
+Get-FileHash -Algorithm SHA256 "C:\path\to\DocumentExtractor.exe"
+
+# Check file size
+(Get-Item "C:\path\to\DocumentExtractor.exe").Length
+```
+
+Notes when running the executable:
+- Run by double-clicking `DocumentExtractor.exe` or via PowerShell: `& "C:\path\to\DocumentExtractor.exe"`
+- If Windows blocks the executable, right-click → Properties → click "Unblock" then run.
+- If Windows Defender flags the file as unknown, you can add an exclusion or upload the file to VirusTotal for verification before trusting it.
+
+Publishing the executable to GitHub Releases (recommended):
+
+1. Create a new release in your repository: https://github.com/Vikas-Maurya-hack/ANY-files-to-JSON/releases/new
+2. Tag the release (e.g. `v1.0.0`) and add release notes (copy from `CHANGELOG.md`).
+3. Upload `DocumentExtractor.exe` as a release asset (attach the `dist/DocumentExtractor.exe` file).
+4. Publish the release — your users can then download the exe directly from Releases.
+
+We recommend uploading the executable as a release asset rather than committing the binary to the main branch to keep the repository lightweight and friendly for contributors.
+
 ### Option 2: Run from Source (For Developers)
 
 ```bash
