@@ -1,0 +1,109 @@
+# ============================================================================
+# DEPENDENCIES - Universal Document Extractor
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# GUI FRAMEWORK
+# ----------------------------------------------------------------------------
+tkinter  # Built-in with Python, no install needed
+# For modern GUI interface with progress bars
+
+# ----------------------------------------------------------------------------
+# PDF PROCESSING
+# ----------------------------------------------------------------------------
+PyPDF2==3.0.1
+# Extract text, metadata from PDFs
+
+pdfplumber==0.10.3
+# Advanced PDF extraction (tables, images, layout)
+
+# ----------------------------------------------------------------------------
+# IMAGE PROCESSING & OCR
+# ----------------------------------------------------------------------------
+Pillow==10.1.0
+# Image handling, format conversion
+
+pytesseract==0.3.10
+# OCR (Optical Character Recognition) for text in images
+# NOTE: Requires Tesseract-OCR installed on system
+
+opencv-python==4.8.1.78
+# Advanced image processing, enhancement for better OCR
+
+# ----------------------------------------------------------------------------
+# MICROSOFT WORD DOCUMENTS
+# ----------------------------------------------------------------------------
+python-docx==1.1.0
+# Extract text, tables, images from DOCX files
+
+# For older .doc files (requires additional setup)
+# pywin32==306  # Windows only, optional
+
+# ----------------------------------------------------------------------------
+# MARKDOWN PROCESSING
+# ----------------------------------------------------------------------------
+markdown==3.5.1
+# Parse markdown with extensions
+
+python-frontmatter==1.1.0
+# Extract YAML frontmatter from markdown
+
+# ----------------------------------------------------------------------------
+# TEXT ENCODING DETECTION
+# ----------------------------------------------------------------------------
+chardet==5.2.0
+# Auto-detect file encoding (UTF-8, Latin-1, etc.)
+
+# ----------------------------------------------------------------------------
+# DATA HANDLING
+# ----------------------------------------------------------------------------
+# No additional packages needed - using built-in json module
+
+# ----------------------------------------------------------------------------
+# UTILITIES
+# ----------------------------------------------------------------------------
+tqdm==4.66.1
+# Progress bars for terminal
+
+python-magic-bin==0.4.14
+# File type detection (Windows binary included)
+
+# ----------------------------------------------------------------------------
+# LOGGING
+# ----------------------------------------------------------------------------
+colorlog==6.8.0
+# Colored console logging
+
+# ----------------------------------------------------------------------------
+# PERFORMANCE
+# ----------------------------------------------------------------------------
+# Using built-in:
+# - threading (multi-threading)
+# - multiprocessing (for CPU-intensive tasks)
+# - zipfile (ZIP extraction)
+# - concurrent.futures (thread pool)
+
+# ----------------------------------------------------------------------------
+# OPTIONAL ENHANCEMENTS
+# ----------------------------------------------------------------------------
+# python-pptx==0.6.23  # PowerPoint support (optional)
+# openpyxl==3.1.2      # Excel support (optional)
+# beautifulsoup4==4.12.2  # HTML parsing (optional)
+# lxml==4.9.3          # XML/HTML parsing (optional)
+
+# ============================================================================
+# INSTALLATION NOTES
+# ============================================================================
+# 
+# 1. Install Python packages:
+#    pip install -r requirements.txt
+#
+# 2. Install Tesseract OCR:
+#    Windows: https://github.com/UB-Mannheim/tesseract/wiki
+#    Download and install, add to PATH
+#    Default location: C:\Program Files\Tesseract-OCR\tesseract.exe
+#
+# 3. Verify installation:
+#    python -c "import pytesseract; print(pytesseract.get_tesseract_version())"
+#
+# ============================================================================
