@@ -1,4 +1,4 @@
 # GUI package
-from .main_window import MainWindow
+from .modern_window import ModernWindow
 
-__all__ = ['MainWindow']
+__all__ = ['ModernWindow']

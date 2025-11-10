@@ -207,7 +207,8 @@ def save_results(results: List[dict], source_dir: Path) -> Path:
 def main():
     """Main entry point"""
     # Validate Tesseract installation
-    if not Config.validate_tesseract():
+    tesseract_valid, tesseract_msg = Config.validate_tesseract()
+    if not tesseract_valid:
         logger.warning("Tesseract OCR not found. Image extraction will fail!")
         logger.warning(f"Please install Tesseract and update TESSERACT_PATH in config.py")
     
@@ -224,10 +225,10 @@ def main():
     
     else:
         # GUI mode
-        from gui.main_window import MainWindow
+        from gui.modern_window import ModernWindow
         
         logger.info("Starting GUI...")
-        app = MainWindow()
+        app = ModernWindow()
         app.run()
 
 
